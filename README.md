@@ -135,35 +135,4 @@ Required libraries for Python along with their version numbers used while making
 3. **`dense_units`** :- Number of Dense units in Decoder(RNN) Model
 4. **`dropout`** :- Dropout probability used in Dropout layer in Decoder(RNN) Model
 
-## 7. Frequently encountered problems
-
-- **Out of memory issue**:
-  - Try reducing `batch_size`
-- **Results differ everytime I run script**:
-  - Due to stochastic nature of these algoritms, results *may* differ slightly everytime. Even though I did set random seed to make results reproducible, results *may* differ slightly.
-- **Results aren't very great using beam search compared to argmax**:
   - Try higher `k` in BEAM search using `beam_search_k` parameter in config. Note that higher `k` will improve results but it'll also increase inference time significantly.
-
-## 8. TODO
-
-- [X] Support for VGG16 Model. Uses InceptionV3 Model by default.
-
-- [X] Implement 2 architectures of RNN Model.
-
-- [X] Support for batch processing in data generator with shuffling.
-
-- [X] Implement BEAM Search.
-
-- [X] Calculate BLEU Scores using BEAM Search.
-
-- [ ] Implement Attention and change model architecture.
-
-- [ ] Support for pre-trained word vectors like word2vec, GloVe etc.
-
-## 9. References
-
-<ul type="square">
-	<li><a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Vinyals_Show_and_Tell_2015_CVPR_paper.pdf">Show and Tell: A Neural Image Caption Generator</a> - Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan</li>
-	<li><a href="https://arxiv.org/abs/1703.09137">Where to put the Image in an Image Caption Generator</a> - Marc Tanti, Albert Gatt, Kenneth P. Camilleri</li>
-	<li><a href="https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/">How to Develop a Deep Learning Photo Caption Generator from Scratch</a></li>
-</ul>
