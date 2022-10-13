@@ -35,6 +35,7 @@ A neural network to generate captions for an image using CNN and RNN with BEAM S
 
 Recommended System Requirements to train model.
 
+
 <ul type="square">
 	<li>A good CPU and a GPU with atleast 8GB memory</li>
 	<li>Atleast 8GB of RAM</li>
